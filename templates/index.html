@@ -1,0 +1,27 @@
+$def with (users_details, users_surveys)
+
+<div id="rounded-background">
+<h2 id="color-grass">All users' details</h2>
+<ul>
+$for user in users_details:
+  <li>
+    <label id="user-label">Number:</label>$user.get('number')
+    <label id="user-label">Email:</label>$user.get('email')
+    <label id="user-label">HTTP POST url:</label>$user.get('httpurl')
+    <label id="user-label">Notification choice:</label>$user.get('notification')
+  </li>
+</ul>
+</div>
+</br>
+<div id="rounded-background">
+<h2 id="color-sand">All users' surveys</h2>
+<ul>
+$for survey in users_surveys:
+  <li>
+    <label id="user-label">Number:</label>$survey.get('number')
+    <label id="user-label">Question:</label>$survey.get('question')
+    <label id="user-label">SMS keyword:</label>$survey.get('keyword')
+    <label id="user-label">Answer:</label>$survey.get('answer')
+  </li>
+</ul>
+<div>

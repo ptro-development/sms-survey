@@ -1,0 +1,13 @@
+$def with (sms_messages)
+
+<div id="rounded-background">
+<h2 id="color-grass">All surveys SMS response messages</h2>
+
+<ul>
+$for sms in sms_messages:
+  <li>
+    <label id="user-label">Number:</label>$sms.from_
+    <label id="user-label">Message:</label>$sms.body
+  </li>
+</ul>
+</div>

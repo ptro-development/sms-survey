@@ -1,0 +1,53 @@
+$def with (page)
+
+<html>
+<head>
+    <title>Panoramic's task</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+	#user-label {
+	  font-weight: bold;
+	}
+	#navcontainer {
+	  text-align: center;
+	}
+	#navcontainer ul li {
+	  display: inline;
+	}
+	#navcontainer ul li {
+	  list-style-type: circle;
+	}
+	#rounded-background {
+          border-radius: 25px;
+	  background: #f2f2f2;
+	  padding: 20px
+	}
+	#color-grass {
+	  color:#408000;
+	}
+	#color-sand {
+	  color:#ff9900;
+	}
+	#submit {
+	  border-radius: 4px;	
+	  font-size: 20px;
+	}
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+<h1 style="text-align:center;">SMS surveys</h1>	
+<div id="navcontainer">
+<ul>
+    <li>&#8227;<a href="/">Home</a></li>
+    <li>&#8227;<a href="/user">New user</a></li>
+    <li>&#8227;<a href="/user_survey">New survey</a></li>
+    <li>&#8227;<a href="/sms_message">Show All SMS response messages</a></li>
+</ul>
+</div>
+
+$:page
+</div>
+</body>
+</html>
